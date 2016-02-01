@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+  <title>Noodle Lab</title>
+  <script src='noodle-lab.js'></script>
+</head>
+<body>
+  <label>Recipe:
+  <select name='recipe'>
+    <option>100% Soba</option>
+    <option>Spelt Udon</option>
+  </select>
+  </label>
+
+  <label>Servings: <input id='servings' type='number' value='2' /></label><br/>
+
+  Flour 1 <input id='flourRatio' type='range' min='0' max='100'> Flour 2<br/>
+  Wets ratio <input id='wetsRatio' type='range' min='0' max='100'>
+
+  <hr/>
+  Flour 1: <span id='flour1'></span> g<br/>
+  Flour 2: <span id='flour2'></span> g<br/>
+  Water: <span id='water'></span> g<br/>
+  Salt: <span id='salt'></span> g
+  <!-- TODO vinegar, kansui etc -->
+  <hr/>
+  Total: <span id='total'></span> g
+</body>
+</html>
